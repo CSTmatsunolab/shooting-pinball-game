@@ -58,6 +58,12 @@ public class GameManager : MonoBehaviour
     public GameObject ushape;
     public GameObject background;
     public GameObject fence;
+
+
+    // 佐々木瀧山追加
+    //public GameObject obstacle1;
+
+
     [HideInInspector]
     public GameObject currentTargetPoint;
     [HideInInspector]
@@ -84,6 +90,11 @@ public class GameManager : MonoBehaviour
     private SpriteRenderer fenceSpriteRenderer;
     private SpriteRenderer leftFlipperSpriteRenderer;
     private SpriteRenderer rightFlipperSpriteRenderer;
+
+    // 佐々木瀧山追加
+   // private SpriteRenderer obstacle1SpriteRenderer;
+
+
     private int obstacleCounter = 0;
     private bool stopProcessing;
    
@@ -102,6 +113,11 @@ public class GameManager : MonoBehaviour
         leftFlipperSpriteRenderer = leftFlipper.GetComponent<SpriteRenderer>();
         rightFlipperSpriteRenderer = rightFlipper.GetComponent<SpriteRenderer>();
 
+
+        //佐々木瀧山追加
+        //obstacle1SpriteRenderer = obstacle1.GetComponent<SpriteRenderer>();
+
+
         //Change color of backgorund, ushape, fence, flippers
         Color color = backgroundColor[Random.Range(0, backgroundColor.Length)];
         ushapeSpriteRenderer.color = color;
@@ -109,6 +125,11 @@ public class GameManager : MonoBehaviour
         fenceSpriteRenderer.color = color;
         leftFlipperSpriteRenderer.color = color;
         rightFlipperSpriteRenderer.color = color;
+
+
+        //佐々木瀧山追加
+        //obstacle1SpriteRenderer.color = color;
+
 
         if (!UIManager.firstLoad)
         {
