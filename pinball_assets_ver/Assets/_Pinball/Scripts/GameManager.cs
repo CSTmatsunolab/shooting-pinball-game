@@ -61,7 +61,8 @@ public class GameManager : MonoBehaviour
 
 
     // 佐々木瀧山追加
-    //public GameObject obstacle1;
+    public GameObject obstacle1;
+    public GameObject usagi;
 
 
     [HideInInspector]
@@ -92,7 +93,9 @@ public class GameManager : MonoBehaviour
     private SpriteRenderer rightFlipperSpriteRenderer;
 
     // 佐々木瀧山追加
-   // private SpriteRenderer obstacle1SpriteRenderer;
+    private SpriteRenderer obstacle1SpriteRenderer;
+    private Rigidbody2D usagiRigid;
+    private SpriteRenderer usagiSpriteRenderer;
 
 
     private int obstacleCounter = 0;
@@ -115,7 +118,9 @@ public class GameManager : MonoBehaviour
 
 
         //佐々木瀧山追加
-        //obstacle1SpriteRenderer = obstacle1.GetComponent<SpriteRenderer>();
+        obstacle1SpriteRenderer = obstacle1.GetComponent<SpriteRenderer>();
+        usagiRigid = usagi.GetComponent<Rigidbody2D>();
+        usagiSpriteRenderer = usagi.GetComponent<SpriteRenderer>();
 
 
         //Change color of backgorund, ushape, fence, flippers
@@ -128,7 +133,7 @@ public class GameManager : MonoBehaviour
 
 
         //佐々木瀧山追加
-        //obstacle1SpriteRenderer.color = color;
+        obstacle1SpriteRenderer.color = color;
 
 
         if (!UIManager.firstLoad)

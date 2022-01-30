@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    GameObject Usagi;
+    Rigidbody2D ridid2D;
+    
     void Start()
     {
+        Usagi = GameObject.Find ("Usagi");
 
     }
     
@@ -33,7 +37,8 @@ public class PlayerController : MonoBehaviour
             transform.Translate(0, -0.1f, 0); // 下に動かす
         }
 
-        
+        // うさぎの移動範囲を制限する
+        Usagi.transform.position = (new Vector3(Mathf.Clamp(Usagi.transform.position.x, -1.6f, 1.6f),Mathf.Clamp(Usagi.transform.position.y, -3, 10),Usagi.transform.position.z));
 
 
     }
