@@ -6296,7 +6296,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 373b93945402adb40b72138e4503572d, type: 3}
   m_Color: {r: 0.6860943, g: 0.68803036, b: 0.6911765, a: 1}
   m_FlipX: 0
@@ -7115,6 +7115,8 @@ MonoBehaviour:
   ushape: {fileID: 1494086591}
   background: {fileID: 1957575233}
   fence: {fileID: 942752337}
+  obstacle1: {fileID: 1048486419}
+  usagi: {fileID: 2127545577}
   currentTargetPoint: {fileID: 0}
   currentTarget: {fileID: 0}
   die: {fileID: 19838414, guid: c00b2c7e709776d4f8349aaf0c450e3f, type: 3}
@@ -9509,10 +9511,10 @@ GameObject:
   - component: {fileID: 2127545580}
   - component: {fileID: 2127545579}
   - component: {fileID: 2127545578}
-  - component: {fileID: 2127545581}
   - component: {fileID: 2127545582}
+  - component: {fileID: 2127545581}
   m_Layer: 0
-  m_Name: usagi
+  m_Name: Usagi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9595,8 +9597,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &2127545581
-CircleCollider2D:
+--- !u!50 &2127545581
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127545577}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 100
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!70 &2127545582
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9608,35 +9631,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.4}
-  serializedVersion: 2
-  m_Radius: 0.7
---- !u!61 &2127545582
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127545577}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.06, y: 3.5}
-    newSize: {x: 2.06, y: 3.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.5, y: 3}
+  m_Direction: 0
 --- !u!1 &2140085114
 GameObject:
   m_ObjectHideFlags: 0
