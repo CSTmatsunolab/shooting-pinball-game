@@ -181,6 +181,18 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+        // 右フリッパー
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            //Debug.Log("Space key was q.");
+            AddTorque(leftFlipperRigid, torqueForce);
+        }
+        // 左フリッパー
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            //Debug.Log("Space key was w.");
+            AddTorque(rightFlipperRigid, -torqueForce);
+        }
     }
 
     /// <summary>
