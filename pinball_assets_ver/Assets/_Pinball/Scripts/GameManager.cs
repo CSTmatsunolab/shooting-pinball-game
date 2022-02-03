@@ -186,12 +186,14 @@ public class GameManager : MonoBehaviour
         {
             //Debug.Log("Space key was q.");
             AddTorque(leftFlipperRigid, torqueForce);
+            SoundManager.Instance.PlaySound(SoundManager.Instance.flipping);
         }
         // 左フリッパー
         if (Input.GetKeyDown(KeyCode.W))
         {
             //Debug.Log("Space key was w.");
             AddTorque(rightFlipperRigid, -torqueForce);
+            SoundManager.Instance.PlaySound(SoundManager.Instance.flipping);
         }
     }
 
