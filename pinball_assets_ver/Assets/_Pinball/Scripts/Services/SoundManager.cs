@@ -28,6 +28,8 @@ namespace SgLib
         public Sound tick;
         public Sound rewarded;
 
+        public Sound usagi;
+
         public delegate void OnMuteStatusChanged(bool isMuted);
 
         public static event OnMuteStatusChanged MuteStatusChanged;

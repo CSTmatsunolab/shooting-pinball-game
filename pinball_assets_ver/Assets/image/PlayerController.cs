@@ -1,16 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SgLib;
+
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     GameObject Usagi;
     Rigidbody2D ridid2D;
+
+    // ダメージ判定フラグ
+    private bool isDamaged　= false;  
     
     void Start()
     {
         Usagi = GameObject.Find ("Usagi");
 
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Player") )
+        {
+            //Debug.Log("bbb");
+            isDamaged = true;
+            SoundManager.Instance.PlaySound(SoundManager.Instance.usagi);
+            StartCoroutine(OnDamage());
+
+        }
     }
     
     void Update()
@@ -39,7 +57,24 @@ public class PlayerController : MonoBehaviour
 
         // うさぎの移動範囲を制限する
         Usagi.transform.position = (new Vector3(Mathf.Clamp(Usagi.transform.position.x, -1.6f, 1.6f),Mathf.Clamp(Usagi.transform.position.y, -3, 10),Usagi.transform.position.z));
+    }
 
+    void FixedUpdate () {
+		//ダメージを受けた時の処理
+		if(isDamaged){
+			float level = Mathf.Abs(Mathf.Sin(Time.time * 10));
+			gameObject.GetComponent<SpriteRenderer> ().color =  new Color(1f,1f,1f,level);
+
+		}
+	}
+
+    public IEnumerator OnDamage() {
+
+        yield return new WaitForSeconds(3.0f);
+            
+        // 通常状態に戻す
+        isDamaged = false;
+        gameObject.GetComponent<SpriteRenderer> ().color = new Color(1f, 1f, 1f, 1f);
 
     }
 }
