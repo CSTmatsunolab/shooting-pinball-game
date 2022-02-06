@@ -59,11 +59,10 @@ public class GameManager : MonoBehaviour
     public GameObject background;
     public GameObject fence;
 
-
     // 佐々木瀧山追加
     public GameObject obstacle1;
     public GameObject usagi;
-
+    public GameObject hpbar;
 
     [HideInInspector]
     public GameObject currentTargetPoint;
@@ -121,6 +120,7 @@ public class GameManager : MonoBehaviour
         obstacle1SpriteRenderer = obstacle1.GetComponent<SpriteRenderer>();
         usagiRigid = usagi.GetComponent<Rigidbody2D>();
         usagiSpriteRenderer = usagi.GetComponent<SpriteRenderer>();
+        hpbar.SetActive(true);
 
 
         //Change color of backgorund, ushape, fence, flippers
