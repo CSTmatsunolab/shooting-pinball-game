@@ -53,7 +53,7 @@
      <Compile Include="Assets\_Pinball\Scripts\Services\PremiumFeatures\ScreenshotSharer.cs" />
      <Compile Include="Assets\_Pinball\Scripts\Services\PremiumFeatures\AdDisplayer.cs" />
      <Compile Include="Assets\_Pinball\Scripts\GameManager.cs" />
-     <Compile Include="Assets\image\PlayerController.cs" />
+     <Compile Include="Assets\_Pinball\Scripts\PlayerController.cs" />
      <Compile Include="Assets\_Pinball\Scripts\Services\PremiumFeatures\RatingRequester.cs" />
      <Compile Include="Assets\_Pinball\Scripts\Services\AppInfo.cs" />
      <Compile Include="Assets\_Pinball\Scripts\Services\PremiumFeatures\InAppPurchaser.cs" />

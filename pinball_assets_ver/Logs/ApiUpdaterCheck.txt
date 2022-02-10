@@ -158,3 +158,153 @@ C# parse time         : 493ms
 candidates check time : 94ms
 console write time    : 1ms
 
+[api-updater (non-obsolete-error-filter)] 2022/02/07 0:26:36 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 214.627ms
+moved types parse time: 128ms
+candidates parse time : 6ms
+C# parse time         : 460ms
+candidates check time : 84ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/07 0:34:56 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 145.75ms
+moved types parse time: 129ms
+candidates parse time : 7ms
+C# parse time         : 471ms
+candidates check time : 79ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/07 1:12:57 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 170.955ms
+moved types parse time: 128ms
+candidates parse time : 7ms
+C# parse time         : 497ms
+candidates check time : 92ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/07 6:15:39 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 184.377ms
+moved types parse time: 129ms
+candidates parse time : 5ms
+C# parse time         : 448ms
+candidates check time : 83ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/07 16:01:22 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 167.103ms
+moved types parse time: 128ms
+candidates parse time : 7ms
+C# parse time         : 559ms
+candidates check time : 106ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/07 16:27:20 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 176.566ms
+moved types parse time: 133ms
+candidates parse time : 7ms
+C# parse time         : 474ms
+candidates check time : 92ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/07 16:50:57 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 160.911ms
+moved types parse time: 125ms
+candidates parse time : 5ms
+C# parse time         : 461ms
+candidates check time : 82ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/07 16:51:09 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 165.96ms
+moved types parse time: 125ms
+candidates parse time : 6ms
+C# parse time         : 444ms
+candidates check time : 86ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/07 17:50:10 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 169.283ms
+moved types parse time: 124ms
+candidates parse time : 6ms
+C# parse time         : 462ms
+candidates check time : 79ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/07 18:20:35 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 161.335ms
+moved types parse time: 126ms
+candidates parse time : 6ms
+C# parse time         : 489ms
+candidates check time : 80ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/07 18:23:19 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 158.956ms
+moved types parse time: 129ms
+candidates parse time : 7ms
+C# parse time         : 486ms
+candidates check time : 80ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/07 18:24:50 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 132.571ms
+moved types parse time: 128ms
+candidates parse time : 5ms
+C# parse time         : 497ms
+candidates check time : 113ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/08 16:17:28 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 183.398ms
+moved types parse time: 130ms
+candidates parse time : 5ms
+C# parse time         : 499ms
+candidates check time : 85ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/08 16:20:43 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 168.996ms
+moved types parse time: 124ms
+candidates parse time : 5ms
+C# parse time         : 471ms
+candidates check time : 76ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 2022/02/08 16:27:58 : Starting /Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 151.251ms
+moved types parse time: 125ms
+candidates parse time : 6ms
+C# parse time         : 493ms
+candidates check time : 81ms
+console write time    : 1ms
+
