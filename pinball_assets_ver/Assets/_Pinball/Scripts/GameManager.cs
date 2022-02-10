@@ -117,6 +117,7 @@ public class GameManager : MonoBehaviour
 
 
         //佐々木瀧山追加
+        //hpbarって必要ですか...?
         obstacle1SpriteRenderer = obstacle1.GetComponent<SpriteRenderer>();
         usagiRigid = usagi.GetComponent<Rigidbody2D>();
         usagiSpriteRenderer = usagi.GetComponent<SpriteRenderer>();
@@ -194,6 +195,15 @@ public class GameManager : MonoBehaviour
             //Debug.Log("Space key was w.");
             AddTorque(rightFlipperRigid, -torqueForce);
             SoundManager.Instance.PlaySound(SoundManager.Instance.flipping);
+        }
+
+        //テスト
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            //Debug.Log("Space key was w.");
+            AddTorque(rightFlipperRigid, -torqueForce);
+            SoundManager.Instance.PlaySound(SoundManager.Instance.flipping);
+            GameOver();
         }
     }
 

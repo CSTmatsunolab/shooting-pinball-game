@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using SgLib;
+//追加
+//using UnityEngine.UI;
 
 public class BallController : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class BallController : MonoBehaviour
     private GameManager gameManager;
     private SpriteRenderer spriteRenderer;
     private bool isChecked;
+
     // Use this for initialization
     void Start()
     {
@@ -20,12 +23,17 @@ public class BallController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Dead") && !gameManager.gameOver)
+        //ここでgameoverを追加したい
+        //value = GetComponent<PlayerController>().slider.value;
+        //Debug.Log("slider.value : " + PlayerController.slider.value);
+
+        if ((col.gameObject.CompareTag("Dead") && !gameManager.gameOver) /*|| GetComponent<PlayerController>().slider.value <= 0*/)
         {
             SoundManager.Instance.PlaySound(SoundManager.Instance.eploring);
             gameManager.CheckGameOver(gameObject);
             Exploring();
         }
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
