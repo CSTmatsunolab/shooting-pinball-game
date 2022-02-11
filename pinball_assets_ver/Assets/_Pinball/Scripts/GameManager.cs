@@ -204,7 +204,7 @@ public class GameManager : MonoBehaviour
         Vector2 pos = Camera.main.ScreenToWorldPoint(currentTargetPoint.transform.position);
         currentTarget = Instantiate(targetPrefab, pos, Quaternion.identity) as GameObject;
 
-        StartCoroutine(Processing());
+        //StartCoroutine(Processing());
     }
 
     void GameOver()
@@ -247,7 +247,7 @@ public class GameManager : MonoBehaviour
             currentTargetPoint = goldPoint;
             Vector2 goldPos = Camera.main.ScreenToWorldPoint(currentTargetPoint.transform.position);
             currentTarget = Instantiate(targetPrefab, goldPos, Quaternion.identity) as GameObject;
-            StartCoroutine(Processing());
+            //StartCoroutine(Processing());
         }      
     }
 
@@ -313,41 +313,41 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    IEnumerator Processing()
-    {
-        Image img = currentTargetPoint.GetComponent<Image>();
-        img.fillAmount = 0;
-        float t = 0;
-        while (t < targetAliveTime)
-        {
-            t += Time.deltaTime;
-            float fraction = t / targetAliveTime;
-            float newF = Mathf.Lerp(0, 1, fraction);
-            img.fillAmount = newF;
-            yield return null;
-        }
+    // IEnumerator Processing()
+    // {
+    //     Image img = currentTargetPoint.GetComponent<Image>();
+    //     img.fillAmount = 0;
+    //     float t = 0;
+    //     while (t < targetAliveTime)
+    //     {
+    //         t += Time.deltaTime;
+    //         float fraction = t / targetAliveTime;
+    //         float newF = Mathf.Lerp(0, 1, fraction);
+    //         img.fillAmount = newF;
+    //         yield return null;
+    //     }
 
-        if (!gameOver)
-        {
-            SoundManager.Instance.PlaySound(SoundManager.Instance.gameOver);
-            gameOver = true;
-            for (int i = 0; i < listBall.Count; i++)
-            {
-                listBall[i].GetComponent<BallController>().Exploring();
-            }
+    //     if (!gameOver)
+    //     {
+    //         SoundManager.Instance.PlaySound(SoundManager.Instance.gameOver);
+    //         gameOver = true;
+    //         for (int i = 0; i < listBall.Count; i++)
+    //         {
+    //             listBall[i].GetComponent<BallController>().Exploring();
+    //         }
 
-            currentTargetPoint.SetActive(false);
+    //         currentTargetPoint.SetActive(false);
 
-            ParticleSystem particle = Instantiate(hitGold, currentTarget.transform.position, Quaternion.identity) as ParticleSystem;
-            var main = particle.main;
-            main.startColor = currentTarget.gameObject.GetComponent<SpriteRenderer>().color;
-            particle.Play();
-            Destroy(particle.gameObject, 1f);
-            Destroy(currentTarget.gameObject);
+    //         ParticleSystem particle = Instantiate(hitGold, currentTarget.transform.position, Quaternion.identity) as ParticleSystem;
+    //         var main = particle.main;
+    //         main.startColor = currentTarget.gameObject.GetComponent<SpriteRenderer>().color;
+    //         particle.Play();
+    //         Destroy(particle.gameObject, 1f);
+    //         Destroy(currentTarget.gameObject);
 
-            GameOver();
-        }      
-    }
+    //         GameOver();
+    //     }      
+    // }
     public void Dead()
     {
         SoundManager.Instance.PlaySound(SoundManager.Instance.gameOver);
