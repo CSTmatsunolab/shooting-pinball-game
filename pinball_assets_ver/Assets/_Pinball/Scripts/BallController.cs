@@ -9,7 +9,8 @@ public class BallController : MonoBehaviour
 
     private GameManager gameManager;
     private SpriteRenderer spriteRenderer;
-    private bool isChecked;
+    //Sliderを入れる
+    GameObject slider;
 
     // Use this for initialization
     void Start()
@@ -19,16 +20,17 @@ public class BallController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         transform.position += (Random.value >= 0.5f) ? (new Vector3(0.2f, 0)) : (new Vector3(-0.2f, 0));
         gameObject.SetActive(true);
+        slider = GameObject.Find("Slider");
+
+
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        //ここでgameoverを追加したい
-        //value = GetComponent<PlayerController>().slider.value;
-        //Debug.Log("slider.value : " + PlayerController.slider.value);
-
         if ((col.gameObject.CompareTag("Dead") && !gameManager.gameOver) /*|| GetComponent<PlayerController>().slider.value <= 0*/)
         {
+            //ダメージ量50
+            slider.GetComponent<SliderController>().crush(155);
             SoundManager.Instance.PlaySound(SoundManager.Instance.eploring);
             gameManager.CheckGameOver(gameObject);
             Exploring();

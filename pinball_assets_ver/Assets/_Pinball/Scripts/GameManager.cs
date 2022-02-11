@@ -58,11 +58,8 @@ public class GameManager : MonoBehaviour
     public GameObject ushape;
     public GameObject background;
     public GameObject fence;
-
     // 佐々木瀧山追加
     public GameObject obstacle1;
-    public GameObject usagi;
-    public GameObject hpbar;
 
     [HideInInspector]
     public GameObject currentTargetPoint;
@@ -90,14 +87,9 @@ public class GameManager : MonoBehaviour
     private SpriteRenderer fenceSpriteRenderer;
     private SpriteRenderer leftFlipperSpriteRenderer;
     private SpriteRenderer rightFlipperSpriteRenderer;
-
     // 佐々木瀧山追加
     private SpriteRenderer obstacle1SpriteRenderer;
-    private Rigidbody2D usagiRigid;
-    private SpriteRenderer usagiSpriteRenderer;
 
-
-    private int obstacleCounter = 0;
     private bool stopProcessing;
    
     // Use this for initialization
@@ -114,15 +106,8 @@ public class GameManager : MonoBehaviour
         fenceSpriteRenderer = fence.GetComponent<SpriteRenderer>();
         leftFlipperSpriteRenderer = leftFlipper.GetComponent<SpriteRenderer>();
         rightFlipperSpriteRenderer = rightFlipper.GetComponent<SpriteRenderer>();
-
-
         //佐々木瀧山追加
-        //hpbarって必要ですか...?
         obstacle1SpriteRenderer = obstacle1.GetComponent<SpriteRenderer>();
-        usagiRigid = usagi.GetComponent<Rigidbody2D>();
-        usagiSpriteRenderer = usagi.GetComponent<SpriteRenderer>();
-        hpbar.SetActive(true);
-
 
         //Change color of backgorund, ushape, fence, flippers
         Color color = backgroundColor[Random.Range(0, backgroundColor.Length)];
@@ -131,8 +116,6 @@ public class GameManager : MonoBehaviour
         fenceSpriteRenderer.color = color;
         leftFlipperSpriteRenderer.color = color;
         rightFlipperSpriteRenderer.color = color;
-
-
         //佐々木瀧山追加
         obstacle1SpriteRenderer.color = color;
 
@@ -310,13 +293,8 @@ public class GameManager : MonoBehaviour
             fenceSpriteRenderer.color = color;
             leftFlipperSpriteRenderer.color = color;
             rightFlipperSpriteRenderer.color = color;
-
-            //Enable obstacles
-            if (obstacleCounter < obstacleManager.transform.childCount)
-            {
-                obstacleManager.transform.GetChild(obstacleCounter).gameObject.SetActive(true);
-                obstacleCounter++;
-            }
+            //佐々木瀧山追加
+            obstacle1SpriteRenderer.color = color;
 
             //Update processing time
             if (targetAliveTime > minTargetAliveTime)
@@ -369,5 +347,25 @@ public class GameManager : MonoBehaviour
 
             GameOver();
         }      
+    }
+    public void Dead()
+    {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.gameOver);
+        gameOver = true;
+        for (int i = 0; i < listBall.Count; i++)
+        {
+            listBall[i].GetComponent<BallController>().Exploring();
+        }
+
+        currentTargetPoint.SetActive(false);
+
+        ParticleSystem particle = Instantiate(hitGold, currentTarget.transform.position, Quaternion.identity) as ParticleSystem;
+        var main = particle.main;
+        main.startColor = currentTarget.gameObject.GetComponent<SpriteRenderer>().color;
+        particle.Play();
+        Destroy(particle.gameObject, 1f);
+        Destroy(currentTarget.gameObject);
+
+        GameOver();
     }
 }

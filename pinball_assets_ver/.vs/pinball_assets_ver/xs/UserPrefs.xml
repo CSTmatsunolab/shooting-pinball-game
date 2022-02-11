@@ -1,12 +1,23 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Pinball/Scripts/GameManager.cs">
+﻿<Properties StartupConfiguration="{386FF19C-99F4-3EE7-4D15-877CA97A72DC}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Pinball/Scripts/BallController.cs">
     <Files>
-      <File FileName="Assets/image/PlayerController.cs" Line="13" Column="17" />
-      <File FileName="Assets/_Pinball/Scripts/GameManager.cs" Line="61" Column="1" />
+      <File FileName="Assets/_Pinball/Scripts/GameManager.cs" Line="351" Column="23" />
+      <File FileName="Assets/_Pinball/Scripts/BallController.cs" Line="12" Column="1" />
+      <File FileName="Assets/_Pinball/Scripts/PlayerController.cs" Line="30" Column="44" />
+      <File FileName="Assets/_Pinball/Scripts/UIManager.cs" />
+      <File FileName="Assets/_Pinball/Scripts/SliderController.cs" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4be557a2-0e53-4418-96e0-2c405f19345f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

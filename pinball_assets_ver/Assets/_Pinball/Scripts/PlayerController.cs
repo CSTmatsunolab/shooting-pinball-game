@@ -16,7 +16,8 @@ public class PlayerController : MonoBehaviour
     int maxHp = 155;
     int currentHp;
     //Sliderを入れる
-    public Slider slider;
+    GameObject slider;
+
 
     //
     public GameManager gameManager;
@@ -26,14 +27,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         Usagi = GameObject.Find ("Usagi");
-
-       
-        //Sliderを満タンにする。
-        slider.value = 1;
-        //現在のHPを最大HPと同じに。
-        currentHp = maxHp;
-        //Debug.Log("Start currentHp : " + currentHp);
-
+        slider = GameObject.Find("Slider");
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -44,28 +38,17 @@ public class PlayerController : MonoBehaviour
             isDamaged = true;
             SoundManager.Instance.PlaySound(SoundManager.Instance.usagi);
             StartCoroutine(OnDamage());
-
-            //ダメージは1～100の中でランダムに決める。
-            int damage = Random.Range(1, 100);
-            Debug.Log("damage : " + damage);
-
-            //現在のHPからダメージを引く
-            currentHp = currentHp - damage;
-            Debug.Log("After currentHp : " + currentHp);
-
-            //最大HPにおける現在のHPをSliderに反映。
-            //int同士の割り算は小数点以下は0になるので、
-            //(float)をつけてfloatの変数として振舞わせる。
-            slider.value = (float)currentHp / (float)maxHp;
+            //ダメージ量50
+            slider.GetComponent<SliderController>().crush(50);
 
             //if文追加
-            if(slider.value <= 0){
-                SoundManager.Instance.PlaySound(SoundManager.Instance.eploring);
+            //if(slider.value <= 0){
+            //    SoundManager.Instance.PlaySound(SoundManager.Instance.eploring);
                 //gameManager.CheckGameOver(ball);
                 //GetComponent<BallController>().Exploring();
-            }
+            //}
             
-            Debug.Log("slider.value : " + slider.value);
+            //Debug.Log("slider.value : " + slider.value);
 
         }
     }
