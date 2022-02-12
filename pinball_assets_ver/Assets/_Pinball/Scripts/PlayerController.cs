@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     //Sliderを入れる
     GameObject slider;
 
+    //毒キノコとの接触フラグ
+    int flag = 0;
 
     //
     public GameManager gameManager;
@@ -28,6 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         Usagi = GameObject.Find ("Usagi");
         slider = GameObject.Find("Slider");
+        flag = 0;
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -52,11 +55,89 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+
+    void Timeset()
+    {
+        flag = 0;
+        //Debug.Log("3秒後に実行された");
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        //りんごと接触
+        if (other.CompareTag("Gold") && !gameManager.gameOver)
+        {
+            SoundManager.Instance.PlaySound(SoundManager.Instance.hitGold);
+            gameManager.CheckAndUpdateValue();
+            ParticleSystem particle = Instantiate(gameManager.hitGold, other.transform.position, Quaternion.identity) as ParticleSystem;
+            var main = particle.main;
+            main.startColor = other.gameObject.GetComponent<SpriteRenderer>().color;
+            particle.Play();
+            Destroy(particle.gameObject, 1f);
+            Destroy(other.gameObject);
+            gameManager.CreateTarget();
+        }
+
+
+        //毒キノコと接触
+        if (other.gameObject.CompareTag("poison"))
+        {
+            flag = 1;
+            Invoke("Timeset", 3);
+        }
+
+    }
     
     void Update()
     {
+
+        if(flag == 0){//通常
+            // 左矢印が押された時
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.Translate(-0.1f, 0, 0); // 左に動かす
+            }
+            // 右矢印が押された時
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.Translate(0.1f, 0, 0); // 右に動かす
+            }
+            // 上矢印が押された時
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                transform.Translate(0, 0.1f, 0); // 上に動かす
+            }
+            // 下矢印が押された時
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                transform.Translate(0, -0.1f, 0); // 下に動かす
+            }
+        }
+        else if(flag == 1){//毒キノコと接触
+            // 左矢印が押された時
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.Translate(-0.05f, 0, 0); // 左に動かす
+            }
+
+            // 右矢印が押された時
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.Translate(0.05f, 0, 0); // 右に動かす
+            }
+            // 上矢印が押された時
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                transform.Translate(0, 0.05f, 0); // 上に動かす
+            }
+            // 下矢印が押された時
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                transform.Translate(0, -0.05f, 0); // 下に動かす
+            }
+        }
         // 左矢印が押された時
-        if (Input.GetKey(KeyCode.LeftArrow))
+        /*if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(-0.1f, 0, 0); // 左に動かす
         }
@@ -75,7 +156,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.DownArrow))
         {
             transform.Translate(0, -0.1f, 0); // 下に動かす
-        }
+        }*/
 
         // うさぎの移動範囲を制限する
         Usagi.transform.position = (new Vector3(Mathf.Clamp(Usagi.transform.position.x, -1.6f, 1.6f),Mathf.Clamp(Usagi.transform.position.y, -3, 10),Usagi.transform.position.z));

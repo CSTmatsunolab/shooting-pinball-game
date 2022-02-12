@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Dead
   - Gold
+  - flower
+  - poison
   layers:
   - Default
   - TransparentFX
