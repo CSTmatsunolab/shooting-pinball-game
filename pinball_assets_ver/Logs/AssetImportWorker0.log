@@ -2,8 +2,8 @@ Unity Editor version:    2020.3.26f1 (7298b473bc1a)
 Branch:                  2020.3/staging
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 12.1 (Build 21C52)
-Darwin version:          21.2.0
+macOS version:           Version 11.6 (Build 20G165)
+Darwin version:          20.6.0
 Architecture:            x86_64
 Running under Rosetta:   YES
 Available memory:        8192 MB
@@ -11,111 +11,111 @@ Using pre-set license
 Pro License: NO
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Unity.app/Contents/MacOS/Unity
+/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/sasakirei/Documents/GitHub/shooting-pinball-game/pinball_assets_ver
+/Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61800
-Successfully changed project path to: /Users/sasakirei/Documents/GitHub/shooting-pinball-game/pinball_assets_ver
-/Users/sasakirei/Documents/GitHub/shooting-pinball-game/pinball_assets_ver
+49299
+Successfully changed project path to: /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver
+/Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 56.27 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 42.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.26f1 (7298b473bc1a)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/sasakirei/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Assets
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Assets
 GfxDevice: creating device client; threaded=0
-2022-02-11 10:34:51.018 Unity[69648:3810257] (null) preferred device: Apple M1 (high power)
-2022-02-11 10:34:51.018 Unity[69648:3810257] Metal devices available: 1
-2022-02-11 10:34:51.018 Unity[69648:3810257] 0: Apple M1 (high power)
-2022-02-11 10:34:51.018 Unity[69648:3810257] Using device Apple M1 (high power)
+2022-02-12 10:40:19.752 Unity[19809:987132] (null) preferred device: Apple M1 (high power)
+2022-02-12 10:40:19.752 Unity[19809:987132] Metal devices available: 1
+2022-02-12 10:40:19.752 Unity[19809:987132] 0: Apple M1 (high power)
+2022-02-12 10:40:19.752 Unity[19809:987132] Using device Apple M1 (high power)
 Initializing Metal device caps: Apple M1
 Initialize mono
-Mono path[0] = '/Applications/Unity/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56648
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56809
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001099 seconds.
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.002118 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 43.69 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 40.47 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.347 seconds
+- Completed reload, in  1.212 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1348ms)
-		BeginReloadAssembly (114ms)
+	ReloadAssembly (1212ms)
+		BeginReloadAssembly (82ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (1112ms)
-			LoadAssemblies (112ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (190ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1010ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (189ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (574ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (490ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (44ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (314ms)
-				ProcessInitializeOnLoadMethodAttributes (115ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (41ms)
+				BeforeProcessingInitializeOnLoad (25ms)
+				ProcessInitializeOnLoadAttributes (307ms)
+				ProcessInitializeOnLoadMethodAttributes (105ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002147 seconds.
+Registered in 0.005028 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 44.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 39.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.425 seconds
+- Completed reload, in  2.334 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2427ms)
-		BeginReloadAssembly (266ms)
+	ReloadAssembly (2335ms)
+		BeginReloadAssembly (261ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (36ms)
+			DisableScriptedObjects (30ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (2066ms)
-			LoadAssemblies (205ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1981ms)
+			LoadAssemblies (193ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (386ms)
-			ReleaseScriptCaches (0ms)
+			SetupTypeCache (358ms)
+			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (1064ms)
+			SetupLoadedEditorAssemblies (1048ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (44ms)
-				BeforeProcessingInitializeOnLoad (179ms)
-				ProcessInitializeOnLoadAttributes (774ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
+				RefreshPlugins (40ms)
+				BeforeProcessingInitializeOnLoad (146ms)
+				ProcessInitializeOnLoadAttributes (794ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (37ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.001041 seconds.
+Validating Project structure ... 0.001035 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.001332 seconds.
+Upgrading shader files ...0.001144 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -124,21 +124,883 @@ Application.AssetDatabase.Refresh Start
 Application.AssetDatabase.Refresh End
 RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
 RefreshProfiler: Total: 0.000ms
-Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.20 seconds
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
 Initializing Unity extensions:
-2022-02-11 10:34:56.242 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037cd730 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-2022-02-11 10:34:56.245 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037bf3a0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/pinball_assets_ver.sln because it has changed
+[C# Project] First difference on line 4
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/pinball_assets_ver.sln:
+[C# Project]   004: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{386FF19C-99F4-3EE7-4D15-877CA97A72DC}"
+[C# Project]   005: EndProject
+[C# Project]   006: Global
+[C# Project]   007: 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+[C# Project]   008: 		Debug|Any CPU = Debug|Any CPU
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/pinball_assets_ver.sln:
+[C# Project]   004: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.PixelPerfect.Tests", "Unity.2D.PixelPerfect.Tests.csproj", "{76C8C9F1-49B9-4FF9-7E1D-0001C8CCC79F}"
+[C# Project]   005: EndProject
+[C# Project]   006: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.TestRunner", "UnityEngine.TestRunner.csproj", "{EAA83F03-DD83-7CB9-DB9F-E18AB4F50166}"
+[C# Project]   007: EndProject
+[C# Project]   008: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mathematics", "Unity.Mathematics.csproj", "{BA7ADA19-AC50-9707-310A-3669824F6584}"
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.Tests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEngine.TestRunner.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEngine.TestRunner.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEngine.TestRunner.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Mathematics.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Mathematics.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Mathematics.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.Triangle.Runtime.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.Triangle.Runtime.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.Triangle.Runtime.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEngine.UI.Tests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEngine.UI.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEngine.UI.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Timeline.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Timeline.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Timeline.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEngine.UI.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEngine.UI.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEngine.UI.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.Runtime.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.Runtime.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.Runtime.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.IK.Runtime.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.IK.Runtime.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.IK.Runtime.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.SpriteShape.Runtime.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.SpriteShape.Runtime.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.SpriteShape.Runtime.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Assembly-CSharp.csproj because it has changed
+[C# Project] First difference on line 295
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Assembly-CSharp.csproj:
+[C# Project]   295:  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+[C# Project]   296:  <HintPath>/Applications/Unity/Hub/Editor/2020.3.26f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+[C# Project]   297:  </Reference>
+[C# Project]   298:  <Reference Include="UnityEditor.iOS.Extensions.Common">
+[C# Project]   299:  <HintPath>/Applications/Unity/Hub/Editor/2020.3.26f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Assembly-CSharp.csproj:
+[C# Project]   295:  <Reference Include="netstandard">
+[C# Project]   296:  <HintPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+[C# Project]   297:  </Reference>
+[C# Project]   298:  <Reference Include="Microsoft.Win32.Primitives">
+[C# Project]   299:  <HintPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Common.Runtime.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Common.Runtime.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Common.Runtime.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.Tests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.InternalAPIEngineBridge.001.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.InternalAPIEngineBridge.001.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.InternalAPIEngineBridge.001.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEditor.TestRunner.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEditor.TestRunner.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEditor.TestRunner.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.PlasticSCM.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.PlasticSCM.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.PlasticSCM.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEditor.UI.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEditor.UI.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEditor.UI.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Services.Core.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Services.Core.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Services.Core.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Timeline.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Timeline.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Timeline.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.VisualStudio.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.VisualStudio.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.VisualStudio.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Psdimporter.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Psdimporter.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Psdimporter.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.SpriteShape.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.SpriteShape.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.SpriteShape.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.CollabProxy.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.CollabProxy.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.CollabProxy.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/PsdPlugin.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/PsdPlugin.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/PsdPlugin.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/DocCodeExamples.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/DocCodeExamples.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/DocCodeExamples.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Path.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Path.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Path.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Mathematics.Tests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Mathematics.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Mathematics.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.PlasticSCM.EditorTests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.PlasticSCM.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.PlasticSCM.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Rider.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Rider.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Rider.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEditor.UI.EditorTests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEditor.UI.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/UnityEditor.UI.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.CollabProxy.EditorTests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.CollabProxy.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.CollabProxy.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.IK.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.IK.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.IK.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.SpriteShape.EditorTests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.SpriteShape.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.SpriteShape.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Sprite.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Sprite.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Sprite.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Tilemap.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Tilemap.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Tilemap.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.VSCode.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.VSCode.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.VSCode.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Common.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Common.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Common.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Mathematics.Editor.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Mathematics.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Mathematics.Editor.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.Editor.Tests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.Editor.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.PixelPerfect.Editor.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Common.EditorTests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Common.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Common.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Path.Tests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Path.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Path.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.InternalAPIEditorBridge.001.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.InternalAPIEditorBridge.001.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.InternalAPIEditorBridge.001.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Tilemap.Package.EditorTests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Tilemap.Package.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Tilemap.Package.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Psdimporter.EditorTests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Psdimporter.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Psdimporter.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Sprite.Package.EditorTests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Sprite.Package.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Sprite.Package.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Nuget.NewtonsoftJson.EditorTests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Nuget.NewtonsoftJson.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.Nuget.NewtonsoftJson.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.Editor.Tests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.Editor.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.TextMeshPro.Editor.Tests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project] Writing /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.EditorTests.csproj because it has changed
+[C# Project] First difference on line 5
+
+[C# Project] Current /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Users/kodamahideaki/Desktop/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+[C# Project] New /Users/matsuno-semi4/Documents/GitHub/shooting-pinball-game/pinball_assets_ver/Unity.2D.Animation.EditorTests.csproj:
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project]   009:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
 ========================================================================
 Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.24 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2215 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 196.2 MB.
-System memory in use after: 195.5 MB.
+System memory in use before: 196.8 MB.
+System memory in use after: 196.1 MB.
 
 Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 2690.
-Total: 4.128167 ms (FindLiveObjects: 0.145500 ms CreateObjectMapping: 0.073250 ms MarkObjects: 3.371333 ms  DeleteObjects: 0.536792 ms)
+Total: 2.583417 ms (FindLiveObjects: 0.090667 ms CreateObjectMapping: 0.043375 ms MarkObjects: 2.046792 ms  DeleteObjects: 0.401833 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -152,667 +1014,48 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/_Pinball/Scripts/SliderController.cs
-  artifactKey: Guid(d598ee70bfd0c4c949da3395026eb53e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Pinball/Scripts/SliderController.cs using Guid(d598ee70bfd0c4c949da3395026eb53e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc6501b0ab6d795ce320c27f19bf2d9') in 0.194655 seconds 
-  Import took 0.201888 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003112 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-02-11 10:49:40.212 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037b6290 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.535 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2537ms)
-		BeginReloadAssembly (260ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (43ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (96ms)
-		EndReloadAssembly (2178ms)
-			LoadAssemblies (214ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (385ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (1207ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (290ms)
-				ProcessInitializeOnLoadAttributes (858ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (41ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.0 MB.
-System memory in use after: 198.2 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2693.
-Total: 2.701166 ms (FindLiveObjects: 0.115667 ms CreateObjectMapping: 0.043709 ms MarkObjects: 2.514125 ms  DeleteObjects: 0.026458 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 884.116338 seconds.
-  path: Assets/_Pinball/Scripts/SliderController.cs
-  artifactKey: Guid(d598ee70bfd0c4c949da3395026eb53e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Pinball/Scripts/SliderController.cs using Guid(d598ee70bfd0c4c949da3395026eb53e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b340faee466a8689f872a12b548a0f71') in 0.011881 seconds 
-  Import took 0.014491 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004530 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-02-11 10:50:37.342 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037b64c0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.313 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2315ms)
-		BeginReloadAssembly (236ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (44ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (82ms)
-		EndReloadAssembly (1986ms)
-			LoadAssemblies (208ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (339ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (1103ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (258ms)
-				ProcessInitializeOnLoadAttributes (786ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (46ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.3 MB.
-System memory in use after: 198.4 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2695.
-Total: 2.055167 ms (FindLiveObjects: 0.085791 ms CreateObjectMapping: 0.042459 ms MarkObjects: 1.907625 ms  DeleteObjects: 0.018458 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002612 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-02-11 10:54:27.225 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037b6140 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.699 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2703ms)
-		BeginReloadAssembly (284ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (50ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (112ms)
-		EndReloadAssembly (2314ms)
-			LoadAssemblies (224ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (420ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (1208ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (308ms)
-				ProcessInitializeOnLoadAttributes (833ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (82ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.5 MB.
-System memory in use after: 198.6 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2697.
-Total: 2.268709 ms (FindLiveObjects: 0.129833 ms CreateObjectMapping: 0.064750 ms MarkObjects: 2.049416 ms  DeleteObjects: 0.023792 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004850 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-02-11 10:55:39.700 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037cd8f0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.516 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2518ms)
-		BeginReloadAssembly (262ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (48ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (97ms)
-		EndReloadAssembly (2157ms)
-			LoadAssemblies (214ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (398ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (1181ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (276ms)
-				ProcessInitializeOnLoadAttributes (837ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (46ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.7 MB.
-System memory in use after: 198.8 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2699.
-Total: 4.538875 ms (FindLiveObjects: 0.236834 ms CreateObjectMapping: 0.044125 ms MarkObjects: 2.190083 ms  DeleteObjects: 2.066750 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002438 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-02-11 10:56:59.815 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037ca920 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.483 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2484ms)
-		BeginReloadAssembly (251ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (45ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (90ms)
-		EndReloadAssembly (2135ms)
-			LoadAssemblies (209ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (387ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (1168ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (289ms)
-				ProcessInitializeOnLoadAttributes (820ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (45ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.9 MB.
-System memory in use after: 199.0 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2701.
-Total: 2.345125 ms (FindLiveObjects: 0.119916 ms CreateObjectMapping: 0.049084 ms MarkObjects: 2.146750 ms  DeleteObjects: 0.028542 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003998 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-02-11 10:58:06.959 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037ca220 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.534 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2541ms)
-		BeginReloadAssembly (267ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (43ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (106ms)
-		EndReloadAssembly (2174ms)
-			LoadAssemblies (208ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (391ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (1161ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (283ms)
-				ProcessInitializeOnLoadAttributes (812ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (43ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 199.1 MB.
-System memory in use after: 199.2 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2703.
-Total: 2.280250 ms (FindLiveObjects: 0.110833 ms CreateObjectMapping: 0.046125 ms MarkObjects: 2.095542 ms  DeleteObjects: 0.026708 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003260 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-02-11 10:58:47.307 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037de760 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.514 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2515ms)
-		BeginReloadAssembly (262ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (42ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (104ms)
-		EndReloadAssembly (2153ms)
-			LoadAssemblies (219ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (384ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (1183ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (291ms)
-				ProcessInitializeOnLoadAttributes (830ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (43ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 199.3 MB.
-System memory in use after: 199.4 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2705.
-Total: 2.648542 ms (FindLiveObjects: 0.117459 ms CreateObjectMapping: 0.045333 ms MarkObjects: 2.447416 ms  DeleteObjects: 0.037041 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004347 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-02-11 11:00:57.263 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037bae60 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.361 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2363ms)
-		BeginReloadAssembly (263ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (48ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (96ms)
-		EndReloadAssembly (2008ms)
-			LoadAssemblies (227ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (342ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (1108ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (249ms)
-				ProcessInitializeOnLoadAttributes (801ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (42ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 199.5 MB.
-System memory in use after: 199.6 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2707.
-Total: 2.490375 ms (FindLiveObjects: 0.096042 ms CreateObjectMapping: 0.044375 ms MarkObjects: 2.005625 ms  DeleteObjects: 0.343250 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 690.418500 seconds.
-  path: Assets/_Pinball/Scripts/GameManager.cs
-  artifactKey: Guid(a3b2528a02bf4bf48898c9e272309f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Pinball/Scripts/GameManager.cs using Guid(a3b2528a02bf4bf48898c9e272309f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beaba58a494c8321309c8143e32732a7') in 0.007714 seconds 
-  Import took 0.010570 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002415 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-02-11 11:02:21.716 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037bac30 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.260 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2261ms)
-		BeginReloadAssembly (211ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (39ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (67ms)
-		EndReloadAssembly (1960ms)
-			LoadAssemblies (211ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (338ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (1083ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (257ms)
-				ProcessInitializeOnLoadAttributes (767ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (43ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 199.6 MB.
-System memory in use after: 199.8 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2709.
-Total: 2.085458 ms (FindLiveObjects: 0.092667 ms CreateObjectMapping: 0.043459 ms MarkObjects: 1.932041 ms  DeleteObjects: 0.016166 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 82.139694 seconds.
-  path: Assets/_Pinball/Scripts/BallController.cs
-  artifactKey: Guid(bc519d38b82767941b4db9bfed24e94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Pinball/Scripts/BallController.cs using Guid(bc519d38b82767941b4db9bfed24e94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49458082621d60cd63e7c1aaf9e4e73f') in 0.007057 seconds 
-  Import took 0.009618 seconds .
+  path: Assets/image/kinoko.png
+  artifactKey: Guid(597a170e71d08448fb8fb52b389a0882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/kinoko.png using Guid(597a170e71d08448fb8fb52b389a0882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd89cfa82014e1dcd37cca2feb23a841d') in 0.682285 seconds 
+  Import took 0.688966 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.161559 seconds.
-  path: Assets/_Pinball/Scripts/BallController.cs
-  artifactKey: Guid(bc519d38b82767941b4db9bfed24e94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Pinball/Scripts/BallController.cs using Guid(bc519d38b82767941b4db9bfed24e94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ff1d27685e3bb6c76b4f776da95697') in 0.003046 seconds 
-  Import took 0.007367 seconds .
+  Time since last request: 0.001134 seconds.
+  path: Assets/image/fuusha_background.PNG
+  artifactKey: Guid(566c7590bb26f4d2b9e41ef6f4784c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/fuusha_background.PNG using Guid(566c7590bb26f4d2b9e41ef6f4784c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0207d8be642e744ac8128666f2f5e428') in 0.415881 seconds 
+  Import took 0.421363 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003826 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-02-11 11:02:53.670 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037ce4c0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.335 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2336ms)
-		BeginReloadAssembly (214ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (39ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (69ms)
-		EndReloadAssembly (2027ms)
-			LoadAssemblies (192ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (359ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (1133ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (274ms)
-				ProcessInitializeOnLoadAttributes (803ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (42ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 199.8 MB.
-System memory in use after: 200.0 MB.
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/image/fuusha.png
+  artifactKey: Guid(de22445e366a84f7ba26920b474f2b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/fuusha.png using Guid(de22445e366a84f7ba26920b474f2b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0583ed28399fabcf5ce70877b827f24') in 0.015716 seconds 
+  Import took 0.018013 seconds .
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2711.
-Total: 2.247458 ms (FindLiveObjects: 0.093084 ms CreateObjectMapping: 0.043250 ms MarkObjects: 2.085125 ms  DeleteObjects: 0.024833 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002664 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-02-11 11:03:12.225 Unity[69648:3810257] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000037cde30 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.284 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2285ms)
-		BeginReloadAssembly (214ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (37ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (66ms)
-		EndReloadAssembly (1982ms)
-			LoadAssemblies (207ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (340ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (1086ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (256ms)
-				ProcessInitializeOnLoadAttributes (773ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (40ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.1 MB.
-System memory in use after: 200.3 MB.
+Received Import Request.
+  Time since last request: 0.000574 seconds.
+  path: Assets/image/mini_apple.png
+  artifactKey: Guid(ff7f1f5eea64844e299d97a95ee2967b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/mini_apple.png using Guid(ff7f1f5eea64844e299d97a95ee2967b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c104da5c7971cab114fa65f065c62452') in 0.008734 seconds 
+  Import took 0.011275 seconds .
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2713.
-Total: 2.099625 ms (FindLiveObjects: 0.083834 ms CreateObjectMapping: 0.042666 ms MarkObjects: 1.957834 ms  DeleteObjects: 0.013875 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/image/apple.png
+  artifactKey: Guid(532e6c79228d74b1097ea5ee60611703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/apple.png using Guid(532e6c79228d74b1097ea5ee60611703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d82960c568630ced41bfaba6980b48a') in 0.026100 seconds 
+  Import took 0.029317 seconds .
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/image/flower.png
+  artifactKey: Guid(34a75a4ed043e48cca8911879fd1abfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/flower.png using Guid(34a75a4ed043e48cca8911879fd1abfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8cec042785d412cb82c3de415c3b78') in 0.019343 seconds 
+  Import took 0.022615 seconds .
+
