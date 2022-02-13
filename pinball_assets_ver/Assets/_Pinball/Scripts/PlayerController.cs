@@ -67,8 +67,12 @@ public class PlayerController : MonoBehaviour
         //りんごと接触
         if (other.CompareTag("Gold") && !gameManager.gameOver)
         {
+            //体力を回復
+            slider.GetComponent<SliderController>().crush(-50);
+
+
             SoundManager.Instance.PlaySound(SoundManager.Instance.hitGold);
-            gameManager.CheckAndUpdateValue();
+            //gameManager.CheckAndUpdateValue();
             ParticleSystem particle = Instantiate(gameManager.hitGold, other.transform.position, Quaternion.identity) as ParticleSystem;
             var main = particle.main;
             main.startColor = other.gameObject.GetComponent<SpriteRenderer>().color;
@@ -82,6 +86,14 @@ public class PlayerController : MonoBehaviour
         //毒キノコと接触
         if (other.gameObject.CompareTag("poison"))
         {
+            SoundManager.Instance.PlaySound(SoundManager.Instance.usagi);
+            ParticleSystem particle = Instantiate(gameManager.hitGold, other.transform.position, Quaternion.identity) as ParticleSystem;
+            var main = particle.main;
+            particle.Play();
+            // Destroy(particle.gameObject, 1f);
+            // Destroy(other.gameObject);
+            //gameManager.CreateTarget();
+
             flag = 1;
             Invoke("Timeset", 3);
         }
