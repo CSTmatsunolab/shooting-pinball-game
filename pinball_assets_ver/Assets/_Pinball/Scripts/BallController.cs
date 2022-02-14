@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using SgLib;
+using System.Collections.Generic;
+using UnityEngine.UI;
 //追加
 //using UnityEngine.UI;
 
@@ -48,6 +50,10 @@ public class BallController : MonoBehaviour
         //花と接触
         if (other.gameObject.CompareTag("flower"))
         {
+            //弾けるエフェクトと色の指定
+            ParticleSystem particle = Instantiate(gameManager.hitGold, other.transform.position, Quaternion.identity) as ParticleSystem;
+            var main = particle.main;
+            main.startColor = Color.magenta;
             //other.gameObject.SetActive(false);
             Time.timeScale = 1.5f;
             Invoke("Timeset", 2);

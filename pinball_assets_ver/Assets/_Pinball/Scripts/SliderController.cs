@@ -34,6 +34,10 @@ public class SliderController : MonoBehaviour
     {
         //現在のHPからダメージを引く
         currentHp = currentHp - damage;
+        if (currentHp > maxHp)
+        {
+            currentHp = maxHp;
+        }
         //現在のHPをSliderに反映。
         slider.value = (float)currentHp / (float)maxHp;
         if (currentHp < 0)

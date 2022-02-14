@@ -51,24 +51,30 @@ public class GameManager : MonoBehaviour
     public GameObject ballPoint;
     public GameObject obstacleManager;
     public GameObject targetPointManager;
+    //追加
+    public GameObject kinokoPointManager;
     public GameObject leftFlipper;
     public GameObject rightFlipper;
     public GameObject targetPrefab;
+    //追加
+    public GameObject kinokoPrefab;
     public GameObject ushape;
     public GameObject background;
     public GameObject fence;
 
-    public GameObject kinoko;
+
 
     [HideInInspector]
     public GameObject currentTargetPoint;
+    //追加
+    public GameObject currentkinokoPoint;
 
     [HideInInspector]
     public GameObject currentTarget;
+    //追加
+    public GameObject currentkinoko;
     public ParticleSystem die;
     public ParticleSystem hitGold;
-
-    public GameObject kinoko2;
 
     [HideInInspector]
     public bool gameOver;
@@ -199,12 +205,16 @@ public class GameManager : MonoBehaviour
 
         //Enable goldPoint, create gold at that position and start processing
         GameObject targetPoint = targetPointManager.transform.GetChild(Random.Range(0, targetPointManager.transform.childCount)).gameObject;
+        GameObject kinokoPoint = kinokoPointManager.transform.GetChild(Random.Range(0, kinokoPointManager.transform.childCount)).gameObject;
         targetPoint.SetActive(true);
+        kinokoPoint.SetActive(true);
         currentTargetPoint = targetPoint;
+        currentkinokoPoint = kinokoPoint;
         Vector2 pos = Camera.main.ScreenToWorldPoint(currentTargetPoint.transform.position);
+        Vector2 kpos = Camera.main.ScreenToWorldPoint(currentkinokoPoint.transform.position);
         currentTarget = Instantiate(targetPrefab, pos, Quaternion.identity) as GameObject;
 
-        kinoko2 = Instantiate(kinoko, pos, Quaternion.identity) as GameObject;
+        currentkinoko = Instantiate(kinokoPrefab, kpos, Quaternion.identity) as GameObject;
 
         //StartCoroutine(Processing());
     }
@@ -253,7 +263,27 @@ public class GameManager : MonoBehaviour
         }      
     }
 
+    public void Createkinoko()
+    {
+        if (!gameOver)
+        {
+            //Stop all processing, disable current gold
+            StopAllCoroutines();
+            currentkinokoPoint.SetActive(false);
 
+            //Random new goldPoint and create new gold, then start processing
+            GameObject kgoldPoint = kinokoPointManager.transform.GetChild(Random.Range(0, kinokoPointManager.transform.childCount)).gameObject;
+            while (currentkinokoPoint == kgoldPoint)
+            {
+                kgoldPoint = kinokoPointManager.transform.GetChild(Random.Range(0, kinokoPointManager.transform.childCount)).gameObject;
+            }
+            kgoldPoint.SetActive(true);
+            currentkinokoPoint = kgoldPoint;
+            Vector2 kgoldPos = Camera.main.ScreenToWorldPoint(currentkinokoPoint.transform.position);
+            currentkinoko = Instantiate(kinokoPrefab, kgoldPos, Quaternion.identity) as GameObject;
+            //StartCoroutine(Processing());
+        }
+    }
 
     /// <summary>
     /// Check game over
@@ -273,11 +303,15 @@ public class GameManager : MonoBehaviour
             currentTargetPoint.SetActive(false);
 
             ParticleSystem particle = Instantiate(hitGold, currentTarget.transform.position, Quaternion.identity) as ParticleSystem;
+            ParticleSystem kparticle = Instantiate(hitGold, currentkinoko.transform.position, Quaternion.identity) as ParticleSystem;
             var main = particle.main;
+            var kmain = kparticle.main;
             main.startColor = currentTarget.gameObject.GetComponent<SpriteRenderer>().color;
+            main.startColor = currentkinoko.gameObject.GetComponent<SpriteRenderer>().color;
             particle.Play();
             Destroy(particle.gameObject, 1f);
             Destroy(currentTarget.gameObject);
+            Destroy(currentkinoko.gameObject);
 
             GameOver();           
         }
@@ -360,13 +394,19 @@ public class GameManager : MonoBehaviour
         }
 
         currentTargetPoint.SetActive(false);
+        currentkinokoPoint.SetActive(false);
+
 
         ParticleSystem particle = Instantiate(hitGold, currentTarget.transform.position, Quaternion.identity) as ParticleSystem;
+        ParticleSystem kparticle = Instantiate(hitGold, currentkinoko.transform.position, Quaternion.identity) as ParticleSystem;
         var main = particle.main;
+        var kmain = kparticle.main;
         main.startColor = currentTarget.gameObject.GetComponent<SpriteRenderer>().color;
+        kmain.startColor = currentkinoko.gameObject.GetComponent<SpriteRenderer>().color;
         particle.Play();
         Destroy(particle.gameObject, 1f);
         Destroy(currentTarget.gameObject);
+        Destroy(currentkinoko.gameObject);
 
         GameOver();
     }

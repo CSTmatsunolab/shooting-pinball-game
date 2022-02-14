@@ -12,9 +12,6 @@ public class PlayerController : MonoBehaviour
     // ダメージ判定フラグ
     private bool isDamaged = false;
 
-    //最大HPと現在のHP。
-    int maxHp = 155;
-    int currentHp;
     //Sliderを入れる
     GameObject slider;
 
@@ -37,22 +34,11 @@ public class PlayerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player") )
         {
-            //Debug.Log("bbb");
             isDamaged = true;
             SoundManager.Instance.PlaySound(SoundManager.Instance.usagi);
             StartCoroutine(OnDamage());
             //ダメージ量50
             slider.GetComponent<SliderController>().crush(50);
-
-            //if文追加
-            //if(slider.value <= 0){
-            //    SoundManager.Instance.PlaySound(SoundManager.Instance.eploring);
-                //gameManager.CheckGameOver(ball);
-                //GetComponent<BallController>().Exploring();
-            //}
-            
-            //Debug.Log("slider.value : " + slider.value);
-
         }
     }
 
@@ -72,10 +58,10 @@ public class PlayerController : MonoBehaviour
 
 
             SoundManager.Instance.PlaySound(SoundManager.Instance.hitGold);
-            //gameManager.CheckAndUpdateValue();
+            //弾けるエフェクトと色の指定
             ParticleSystem particle = Instantiate(gameManager.hitGold, other.transform.position, Quaternion.identity) as ParticleSystem;
             var main = particle.main;
-            main.startColor = other.gameObject.GetComponent<SpriteRenderer>().color;
+            main.startColor = Color.red;
             particle.Play();
             Destroy(particle.gameObject, 1f);
             Destroy(other.gameObject);
@@ -89,10 +75,11 @@ public class PlayerController : MonoBehaviour
             SoundManager.Instance.PlaySound(SoundManager.Instance.usagi);
             ParticleSystem particle = Instantiate(gameManager.hitGold, other.transform.position, Quaternion.identity) as ParticleSystem;
             var main = particle.main;
+            main.startColor = Color.blue;
             particle.Play();
-            // Destroy(particle.gameObject, 1f);
-            // Destroy(other.gameObject);
-            //gameManager.CreateTarget();
+            Destroy(particle.gameObject, 1f);
+            Destroy(other.gameObject);
+            gameManager.Createkinoko();
 
             flag = 1;
             Invoke("Timeset", 3);
