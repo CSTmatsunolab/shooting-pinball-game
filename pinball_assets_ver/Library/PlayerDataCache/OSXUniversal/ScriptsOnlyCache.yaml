@@ -720,7 +720,7 @@ ScriptsOnlyBuild:
     className: Utilities
   - hash:
       serializedVersion: 2
-      Hash: 2c8935c0b872a8ea98fa39ff037f05c9
+      Hash: 3f920f350e3e3023af3ca9c5102b1685
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIManager

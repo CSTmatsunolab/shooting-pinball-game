@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
 
     public GameManager gameManager;
     public Text score;
-    public Text scoreInScoreBg;
+    //public Text scoreInScoreBg;
     public Text bestScore;
     public GameObject buttons;
     public Button muteBtn;
@@ -29,6 +29,7 @@ public class UIManager : MonoBehaviour
     public GameObject removeAdsBtn;
     public GameObject restorePurchaseBtn;
    // public GameObject shareBtn;
+
 
     Animator scoreAnimator;
     bool hasCheckedGameOver = false;
@@ -48,7 +49,7 @@ public class UIManager : MonoBehaviour
     {
         scoreAnimator = score.GetComponent<Animator>();
         score.gameObject.SetActive(false);
-        scoreInScoreBg.text = ScoreManager.Instance.Score.ToString();
+        //scoreInScoreBg.text = ScoreManager.Instance.Score.ToString();
 
 
         // Show or hide premium buttons
@@ -107,7 +108,7 @@ public class UIManager : MonoBehaviour
     {
         buttons.SetActive(true);
         score.gameObject.SetActive(false);
-        scoreInScoreBg.text = ScoreManager.Instance.Score.ToString();
+        //scoreInScoreBg.text = ScoreManager.Instance.Score.ToString();
 
         bool enablePremium = PremiumFeaturesManager.Instance.enablePremiumFeatures;
         leaderboardBtn.SetActive(enablePremium);
@@ -121,7 +122,7 @@ public class UIManager : MonoBehaviour
     public void HideAllButtons()
     {
         buttons.SetActive(false);
-        score.gameObject.SetActive(true);
+        score.gameObject.SetActive(false);
     }
 
     public void FinishLoading()

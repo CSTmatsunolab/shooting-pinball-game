@@ -12331,7 +12331,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1716321950}
   score: {fileID: 711824821}
-  scoreInScoreBg: {fileID: 1720120087}
   bestScore: {fileID: 2035670264}
   buttons: {fileID: 213948174}
   muteBtn: {fileID: 697992007}
