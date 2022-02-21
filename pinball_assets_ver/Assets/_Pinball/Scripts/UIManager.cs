@@ -28,7 +28,7 @@ public class UIManager : MonoBehaviour
     public GameObject achievementBtn;
     public GameObject removeAdsBtn;
     public GameObject restorePurchaseBtn;
-    public GameObject shareBtn;
+   // public GameObject shareBtn;
 
     Animator scoreAnimator;
     bool hasCheckedGameOver = false;
@@ -57,7 +57,7 @@ public class UIManager : MonoBehaviour
         achievementBtn.SetActive(enablePremium);
         removeAdsBtn.SetActive(enablePremium);
         restorePurchaseBtn.SetActive(enablePremium);
-        shareBtn.SetActive(false);  // share button only shows when game over
+        //shareBtn.SetActive(false);  // share button only shows when game over
             
 
         if (!firstLoad)
@@ -114,7 +114,7 @@ public class UIManager : MonoBehaviour
         achievementBtn.SetActive(enablePremium);
         removeAdsBtn.SetActive(enablePremium);
         restorePurchaseBtn.SetActive(enablePremium);
-        shareBtn.SetActive(enablePremium);
+        //shareBtn.SetActive(enablePremium);
 
     }
 

@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     //
     public GameManager gameManager;
     public BallController ballController;
+    public ScoreManager scoreManager;
 
 
     void Start()
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(OnDamage());
             //ダメージ量50
             slider.GetComponent<SliderController>().crush(50);
+
         }
     }
 
