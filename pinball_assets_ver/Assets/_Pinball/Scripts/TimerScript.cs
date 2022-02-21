@@ -4,33 +4,61 @@ using System.Collections;
 using UnityEngine.UI;
  
 public class TimerScript : MonoBehaviour {
+
+	private GameManager gameManager;
+    private SpriteRenderer spriteRenderer;
+	private UIManager uIManager;
+
+	public static bool firstLoad = true;
  
 	[SerializeField]
-	private int minute;
+	public int minute;
 	[SerializeField]
-	private float seconds;
+	public float seconds;
 	//　前のUpdateの時の秒数
-	private float oldSeconds;
+	public float oldSeconds;
 	//　タイマー表示用テキスト
-	private Text timerText;
+	public Text timerText;
+
+	int a = 0;
  
 	void Start () {
 		minute = 0;
 		seconds = 0f;
 		oldSeconds = 0f;
 		timerText = GetComponentInChildren<Text> ();
+
+		gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        //gameObject.SetActive(false);
+		spriteRenderer = GetComponent<SpriteRenderer>();
+		//gameObject.SetActive(true);
+
+		
 	}
  
 	void Update () {
-		seconds += Time.deltaTime;
-		if(seconds >= 60f) {
-			minute++;
-			seconds = seconds - 60;
+		if( a == 1){
+			seconds += Time.deltaTime;
+			if(seconds >= 60f) {
+				minute++;
+				seconds = seconds - 60;
+			}
+			//　値が変わった時だけテキストUIを更新
+			if((int)seconds != (int)oldSeconds) {
+				timerText.text = minute.ToString("00") + ":" + ((int) seconds).ToString ("00");
+			}
+			oldSeconds = seconds;
 		}
-		//　値が変わった時だけテキストUIを更新
-		if((int)seconds != (int)oldSeconds) {
-			timerText.text = minute.ToString("00") + ":" + ((int) seconds).ToString ("00");
+
+		if(gameManager.gameOver)
+		{
+			// Debug.Log("GameOver");
+			a = 0;
+			//gameManager.gameOver = false;
 		}
-		oldSeconds = seconds;
+	}
+
+	public void timer() {
+		a = 1;
 	}
 }

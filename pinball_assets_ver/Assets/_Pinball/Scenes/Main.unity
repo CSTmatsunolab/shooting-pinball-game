@@ -5120,6 +5120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minute: 0
   seconds: 0
+  oldSeconds: 0
+  timerText: {fileID: 0}
 --- !u!114 &893232226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5153,7 +5155,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '00 : 00'
+  m_Text: 00:00
 --- !u!222 &893232227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10560,6 +10562,7 @@ MonoBehaviour:
   ushape: {fileID: 1494086591}
   background: {fileID: 1957575233}
   fence: {fileID: 942752337}
+  timerScript: {fileID: 893232225}
   currentTargetPoint: {fileID: 0}
   currentkinokoPoint: {fileID: 0}
   currentTarget: {fileID: 0}
@@ -12251,6 +12254,7 @@ MonoBehaviour:
   buttons: {fileID: 213948174}
   muteBtn: {fileID: 697992007}
   unMuteBtn: {fileID: 1138529421}
+  timerScript: {fileID: 893232225}
   leaderboardBtn: {fileID: 519803988}
   achievementBtn: {fileID: 1804695868}
   removeAdsBtn: {fileID: 1998604277}

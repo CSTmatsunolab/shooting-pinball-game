@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
         Usagi = GameObject.Find ("Usagi");
         slider = GameObject.Find("Slider");
         flag = 0;
+        //pt = 0;
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -55,6 +56,8 @@ public class PlayerController : MonoBehaviour
         {
             //体力を回復
             slider.GetComponent<SliderController>().crush(-50);
+
+            //pt += 1;
 
 
             SoundManager.Instance.PlaySound(SoundManager.Instance.hitGold);

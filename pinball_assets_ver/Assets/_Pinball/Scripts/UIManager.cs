@@ -20,6 +20,8 @@ public class UIManager : MonoBehaviour
     public Button muteBtn;
     public Button unMuteBtn;
 
+    public TimerScript timerScript;
+
 
     [Header("Premium Buttons")]
     public GameObject leaderboardBtn;
@@ -87,6 +89,7 @@ public class UIManager : MonoBehaviour
         if (!firstLoad)
         {
             StartCoroutine(Restart());
+            
         }
         else
         {
@@ -94,6 +97,9 @@ public class UIManager : MonoBehaviour
             gameManager.StartGame();
             gameManager.CreateBall();
             firstLoad = false;
+            
+            
+
         }
     }
 
@@ -148,6 +154,9 @@ public class UIManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        timerScript.timer();
+
+        
     }
 
     public void ShowLeaderboardUI()

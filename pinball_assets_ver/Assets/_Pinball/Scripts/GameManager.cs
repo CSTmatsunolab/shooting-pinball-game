@@ -62,6 +62,8 @@ public class GameManager : MonoBehaviour
     public GameObject background;
     public GameObject fence;
 
+    public TimerScript timerScript;
+
 
 
     [HideInInspector]
@@ -99,6 +101,8 @@ public class GameManager : MonoBehaviour
     
 
     private bool stopProcessing;
+
+    
    
     // Use this for initialization
     void Start()
@@ -236,6 +240,7 @@ public class GameManager : MonoBehaviour
     {
         GameObject ball = Instantiate(ballPrefab, ballPoint.transform.position, Quaternion.identity) as GameObject;
         listBall.Add(ball);
+        timerScript.timer();
     }
 
     /// <summary>
@@ -384,6 +389,7 @@ public class GameManager : MonoBehaviour
     //         GameOver();
     //     }      
     // }
+
     public void Dead()
     {
         SoundManager.Instance.PlaySound(SoundManager.Instance.gameOver);
